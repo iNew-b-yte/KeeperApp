@@ -12,10 +12,10 @@
 //HINT: You will need to study the classes in the styles.css file to appy styling.
 import React from "react";
 
-function Note(){
+function Note(props){
     return (<div className="note">
-        <h1>This is a heading</h1>
-        <p>This is a paragraph</p>
+        <h1>{props._title}</h1>
+        <p>{props._content}</p>
     </div>);
 }
 export default Note;
